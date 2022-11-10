@@ -1,0 +1,12 @@
+.main-wraper {
+  max-width: 120rem;
+  margin: 0 auto;
+  /* background-color: #fff; */
+}
+@media (max-width: 850px) {
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+  }
+}

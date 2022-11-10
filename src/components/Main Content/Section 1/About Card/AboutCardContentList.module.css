@@ -1,0 +1,15 @@
+/* .list {
+} */
+.list-item {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: #96928d;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.list-ietm__svg {
+  fill: var(--color-primary-orange);
+  width: 1rem;
+  height: 1rem;
+}

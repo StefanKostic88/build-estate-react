@@ -1,0 +1,35 @@
+.section-1 {
+  /* background-color: red; */
+  padding: var(--padding-primary);
+}
+
+.about-img__container {
+  flex-basis: 25%;
+  object-fit: cover;
+  object-position: center;
+}
+.about-img__container img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .about-img__container {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+/* NExt */
+@media (max-width: 1100px) {
+  .about-img__container {
+    flex-basis: 32%;
+    align-self: flex-start;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-img__container {
+    display: none;
+  }
+}
