@@ -8,17 +8,21 @@ const TestemonialCard = ({ testemonialContent }) => {
   }
 
   return (
-    <figure className="">
-      <div className="">
-        <div className="">
+    <figure className={classes["testemonial-card"]}>
+      <div className={classes["user-profile"]}>
+        <div className={classes["user-img__container"]}>
           <img src="./images/t1.jpg" alt="user 1 img" />
         </div>
-        <div className="">
-          <span>{testemonialContent.user}</span>
-          <span>{stars}</span>
+        <div className={classes["rating-container"]}>
+          <span className={classes["user-name"]}>
+            {testemonialContent.user}
+          </span>
+          <span className={classes.rating}>{stars}</span>
         </div>
       </div>
-      <div className="">{testemonialContent.text}</div>
+      <div className={classes["testemonial-content"]}>
+        {testemonialContent.text}
+      </div>
     </figure>
   );
 };

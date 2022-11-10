@@ -6,15 +6,15 @@ import classes from "./SectionTwo.module.css";
 
 const SectionTwo = ({ title }) => {
   return (
-    <SectionCard className={classes["section-1"]}>
+    <SectionCard className={classes["section-2"]}>
       <SectionTitle sectionTitle={title} />
-      <SectionContent>
+      <SectionContent className="SECOND">
         <ul>
           <li>
             <TestemonialCard
               testemonialContent={{
                 user: "UserName",
-                text: "nestonestosdasd",
+                text: "nestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasd",
                 image: "asdsad",
               }}
             />
@@ -23,7 +23,7 @@ const SectionTwo = ({ title }) => {
             <TestemonialCard
               testemonialContent={{
                 user: "UserName",
-                text: "nestonestosdasd",
+                text: "nestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasd",
                 image: "asdsad",
               }}
             />
@@ -32,7 +32,7 @@ const SectionTwo = ({ title }) => {
             <TestemonialCard
               testemonialContent={{
                 user: "UserName",
-                text: "nestonestosdasd",
+                text: "nestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasdnestonestosdasd",
                 image: "asdsad",
               }}
             />
