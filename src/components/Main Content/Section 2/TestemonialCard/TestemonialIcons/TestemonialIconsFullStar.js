@@ -1,4 +1,4 @@
-const TestemonialIcons = () => {
+const TestemonialIconsFullStar = () => {
   return (
     <svg
       version="1.1"
@@ -13,4 +13,4 @@ const TestemonialIcons = () => {
   );
 };
 
-export default TestemonialIcons;
+export default TestemonialIconsFullStar;

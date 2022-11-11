@@ -1,6 +1,6 @@
 .testemonial-card {
   background-color: #82c3f4;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
 }
 
 .user-profile {
@@ -16,11 +16,11 @@
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 50%;
-
   overflow: hidden;
-  position: relative;
   border: 3px double #fff;
-  background-color: red;
+}
+.user-img__container img {
+  width: 100%;
 }
 .rating-container {
   display: flex;
@@ -32,25 +32,12 @@
   text-transform: uppercase;
 }
 
-.rating {
-  display: flex;
-  justify-content: space-between;
-  width: 8ch;
-  /* background-color: red; */
-}
-
 .rating svg {
   stroke: #fff;
   fill: #fff;
   width: 1.25rem;
   height: 1.25rem;
-}
-
-.rating svg:last-child {
-  stroke: red;
-  fill: red;
-  width: 1.25rem;
-  height: 1.25rem;
+  margin-left: 0.25rem;
 }
 
 .testemonial-content {
