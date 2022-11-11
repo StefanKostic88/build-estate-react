@@ -4,8 +4,10 @@ import classes from "./TestemonialCard.module.css";
 const TestemonialCard = ({ testemonialContent }) => {
   const stars = [];
   for (let i = 0; i < 5; i++) {
-    stars.push(<TestemonialIconsFullStar key={i} />);
     if (i === 4) stars.push(<TestemonialIconsHalfFullStar key={i} />);
+    else {
+      stars.push(<TestemonialIconsFullStar key={i} />);
+    }
   }
 
   return (
