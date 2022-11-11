@@ -1,16 +1,15 @@
-import ContactIcon from "./ContactIcon.js";
+import CostumeSVG from "../../../UI/CostumeSvg/CostumeSVG.js";
 const ContactCard = ({ contactInfo }) => {
   const data = contactInfo.info.map((el, index) => {
     return (
       <li key={index}>
         <a href="google.com">
-          {el.icon && <ContactIcon />}
-          {el.text}
+          {el.icon && <CostumeSVG items={el.svgParam}>{el.svgVer}</CostumeSVG>}
+          {el.text || <CostumeSVG items={el.svgParam}>{el.svgVer}</CostumeSVG>}
         </a>
       </li>
     );
   });
-  console.log(data);
   return (
     <figure className="contact-card">
       <h3>Contact us</h3>
