@@ -1,6 +1,8 @@
 import CostumeSVG from "../../../UI/CostumeSvg/CostumeSVG.js";
-const ContactCard = ({ contactInfo }) => {
-  const data = contactInfo.info.map((el, index) => {
+import classes from "./ContactCard.module.css";
+const ContactCard = (props) => {
+  console.log(props);
+  const data = props.contactInfo.info.map((el, index) => {
     return (
       <li key={index}>
         <a href="google.com">
@@ -11,9 +13,9 @@ const ContactCard = ({ contactInfo }) => {
     );
   });
   return (
-    <figure className="contact-card">
-      <h3>Contact us</h3>
-      <ul className="contact-info">{data}</ul>
+    <figure className={classes["contact-card"]}>
+      <h3>{props.title}</h3>
+      <ul className={classes["contact-info"]}>{data}</ul>
     </figure>
   );
 };

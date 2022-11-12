@@ -1,6 +1,7 @@
 .section-content {
   display: flex;
   justify-content: center;
+  align-self: stretch;
   gap: 2rem;
 }
 
