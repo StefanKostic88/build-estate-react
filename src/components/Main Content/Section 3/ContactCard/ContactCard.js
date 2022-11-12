@@ -1,7 +1,6 @@
 import CostumeSVG from "../../../UI/CostumeSvg/CostumeSVG.js";
 import classes from "./ContactCard.module.css";
 const ContactCard = (props) => {
-  console.log(props);
   const data = props.contactInfo.info.map((el, index) => {
     return (
       <li key={index}>

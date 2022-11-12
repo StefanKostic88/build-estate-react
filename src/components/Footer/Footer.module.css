@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-white);
+  gap: 1.25rem;
+  font-size: 1.2rem;
+  min-height: 10vh;
+  background-color: #212121;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-transform: capitalize;
+}
+
+.copy {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.copy span {
+  padding-right: 0.4rem;
+}

@@ -1,7 +1,7 @@
 .main-wraper {
   max-width: 120rem;
   margin: 0 auto;
-  /* background-color: #fff; */
+  background-color: #fff;
 }
 @media (max-width: 850px) {
   main {
