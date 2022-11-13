@@ -44,3 +44,17 @@ textarea:focus {
   color: var(--color-primary-white);
   background-color: #fd9727;
 }
+
+@media (max-width: 1100px) {
+  .action {
+    width: 70%;
+  }
+  .actions-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .action {
+    width: 90%;
+  }
+}

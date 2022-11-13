@@ -11,7 +11,7 @@ import ContactCard from "./ContactCard/ContactCard.js";
 
 const SectionThree = ({ title }) => {
   return (
-    <SectionCard className="">
+    <SectionCard className={classes["section-3"]}>
       <SectionTitle sectionTitle={title} />
       <SectionContent>
         <ContactCard contactInfo={contacctDataOne} title={"Contact us"} />

@@ -1,3 +1,6 @@
+.section-3 {
+  padding: var(--padding-primary);
+}
 .iframe-container {
   width: 90%;
   height: 35rem;
@@ -18,4 +21,11 @@
 
 .map {
   opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+  .iframe-container {
+    width: 100%;
+    border-radius: 0;
+  }
 }

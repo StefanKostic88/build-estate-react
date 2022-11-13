@@ -1,14 +1,18 @@
 .contact-card {
   /* background-color: red; */
   color: var(--color-primary-white);
-  min-width: 25%;
-  max-height: 17rem;
+  /* min-width: 25%; */
+  min-height: 14rem;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
   gap: 1.2rem;
   padding: 2rem;
+  flex-basis: 20%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .contact-card:first-child {
@@ -38,6 +42,12 @@
   flex-direction: row;
   gap: 0.75rem;
 }
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .contact-info li a {
   color: inherit;
@@ -59,3 +69,15 @@
     width: 50%;
     margin: 0 auto;
   } */
+
+@media (max-width: 1070px) {
+  .contact-card {
+    flex-basis: 40%;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-card {
+    flex-basis: 100%;
+  }
+}

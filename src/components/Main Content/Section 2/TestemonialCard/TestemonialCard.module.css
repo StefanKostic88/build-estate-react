@@ -44,3 +44,18 @@
   color: #fff;
   line-height: 1.7;
 }
+
+@media (max-width: 1300px) {
+  .testemonial-card {
+    flex-basis: 40%;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .testemonial-card {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+}
