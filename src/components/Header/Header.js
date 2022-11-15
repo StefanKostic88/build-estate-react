@@ -1,12 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import React from "react";
 import CostumeLink from "../UI/CostumeLink/CostumeLink.js";
 import classes from "./Header.module.css";
-const Header = (props) => {
-  const headerRef = useRef();
-  const [headerHight, setHeaderHight] = useState();
-  useEffect(() => {
-    setHeaderHight(headerRef.current.offsetHeight);
-  }, []);
+const Header = React.forwardRef((props, ref) => {
   const navArr = [
     { name: "Home", href: "https://www.google.com/" },
     { name: "About", href: "https://www.google.com/" },
@@ -22,9 +17,10 @@ const Header = (props) => {
       </li>
     );
   });
+
   return (
     <header
-      ref={headerRef}
+      ref={ref}
       className={`${classes["main-header"]} ${
         props.className ? classes[props.className] : ""
       }`}
@@ -35,6 +31,6 @@ const Header = (props) => {
       <ul className={classes["main-nav"]}>{navLinks}</ul>
     </header>
   );
-};
+});
 
 export default Header;

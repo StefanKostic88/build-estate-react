@@ -1,14 +1,18 @@
 import Button from "../UI/Button/Button.js";
 import Header from "../Header/Header.js";
 import classes from "./Hero.module.css";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 const Hero = () => {
   const heroRef = useRef();
+  const refHeader = useRef();
+
   const [heroIsNotVisible, setHeroIsNotVisible] = useState();
+
   useEffect(() => {
     const heroObserver = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
+
         if (!entry.isIntersecting) {
           setHeroIsNotVisible(true);
         } else {
@@ -16,15 +20,16 @@ const Hero = () => {
         }
       },
       {
-        threshold: 0.2,
+        rootMargin: `-${refHeader.current.offsetHeight}px`,
       }
     );
+
     heroObserver.observe(heroRef.current);
   }, []);
-
+  // console.log(headerHight);
   return (
     <div ref={heroRef} className={classes.hero}>
-      <Header className={heroIsNotVisible && `fixed`} />
+      <Header ref={refHeader} className={heroIsNotVisible && `fixed`} />
       <div className={classes["hero-content"]}>
         <h2 className={classes["hero-title"]}>
           We shape our buildings thereafter they shape us
